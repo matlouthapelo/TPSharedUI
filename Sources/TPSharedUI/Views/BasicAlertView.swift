@@ -4,6 +4,11 @@ public struct BasicAlertView: View {
     @State var basicAlertViewModel: BasicAlertViewModel?
     @ObservedObject var showingActionOptions: ToggleState
     
+    public init(basicAlertViewModel: BasicAlertViewModel? = nil, showingActionOptions: ToggleState) {
+        _basicAlertViewModel = State(initialValue: basicAlertViewModel)
+        self.showingActionOptions = showingActionOptions
+    }
+    
     private func calculateContentHeight(forText: String) -> CGFloat {
         let textWidth = UIScreen.main.bounds.width - 90 - 20 // Subtract 20 to leave some padding on the sides
         let text = forText

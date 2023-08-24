@@ -4,6 +4,11 @@ public struct BottomAlertView: View {
     @State var bottomAlertViewModel: BottomAlertViewModel?
     @ObservedObject var showingMenu: ToggleState
     
+    public init(bottomAlertViewModel: BottomAlertViewModel? = nil, showingMenu: ToggleState) {
+        _bottomAlertViewModel = State(initialValue: bottomAlertViewModel)
+        self.showingMenu = showingMenu
+    }
+    
     public var body: some View {
         VStack {
             /*ZStack {

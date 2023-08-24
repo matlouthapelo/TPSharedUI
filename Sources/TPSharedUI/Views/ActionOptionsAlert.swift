@@ -10,6 +10,11 @@ public struct ActionOptionsAlert: View {
     @State var actionViewModel: AlertViewModel?
     @ObservedObject var showingActionOptions: ToggleState
     
+    public init(actionViewModel: AlertViewModel? = nil, showingActionOptions: ToggleState) {
+        _actionViewModel = State(initialValue: actionViewModel)
+        self.showingActionOptions = showingActionOptions
+    }
+    
     public var body: some View {
         VStack {
             ZStack {
