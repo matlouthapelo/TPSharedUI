@@ -1,7 +1,7 @@
 import SwiftUI
 
 public class ToggleState: ObservableObject {
-    @Published var isToggleOn = false
+    @Published public var isToggleOn = false
     
     public init () {}
 }
