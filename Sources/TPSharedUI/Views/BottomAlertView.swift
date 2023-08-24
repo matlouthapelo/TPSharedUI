@@ -4,7 +4,7 @@ public struct BottomAlertView: View {
     @State var bottomAlertViewModel: BottomAlertViewModel?
     @ObservedObject var showingMenu: ToggleState
     
-    var body: some View {
+    public var body: some View {
         VStack {
             /*ZStack {
                 Color.black.opacity(showingMenu.isToggleOn ? 0.8 : 0)

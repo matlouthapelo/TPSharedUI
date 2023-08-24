@@ -8,7 +8,7 @@ public struct ActionOptionsAlert: View {
     @State var actionViewModel: AlertViewModel?
     @ObservedObject var showingActionOptions: ToggleState
     
-    var body: some View {
+    public var body: some View {
         VStack {
             ZStack {
                 Color.black.opacity(showingActionOptions.isToggleOn ? 0.8 : 0)

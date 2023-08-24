@@ -16,7 +16,7 @@ public struct BasicAlertView: View {
         return size.height + 140 // Adding 120 to account for the other elements in the VStack
     }
     
-    var body: some View {
+    public var body: some View {
         VStack {
             ZStack {
                 Color.black.opacity(showingActionOptions.isToggleOn ? 0.8 : 0)
