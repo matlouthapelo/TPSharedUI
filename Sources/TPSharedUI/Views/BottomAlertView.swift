@@ -54,8 +54,8 @@ public struct BottomAlertView: View {
     }
 }
 
-struct BottomAlertView_Previews: PreviewProvider {
-    static var previews: some View {
+public struct BottomAlertView_Previews: PreviewProvider {
+    public static var previews: some View {
         BottomAlertView(showingMenu: ToggleState())
     }
 }

@@ -86,8 +86,8 @@ public struct BasicAlertView: View {
     }
 }
 
-struct BasicAlertView_Previews: PreviewProvider {
-    static var previews: some View {
+public struct BasicAlertView_Previews: PreviewProvider {
+    public static var previews: some View {
         BasicAlertView(basicAlertViewModel: nil, showingActionOptions: ToggleState())
     }
 }

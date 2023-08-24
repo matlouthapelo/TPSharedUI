@@ -2,6 +2,8 @@ import SwiftUI
 
 public class ToggleState: ObservableObject {
     @Published var isToggleOn = false
+    
+    public init () {}
 }
 
 public struct ActionOptionsAlert: View {
@@ -55,8 +57,8 @@ public struct ActionOptionsAlert: View {
     }
 }
 
-struct ActionOptionsAlert_Previews: PreviewProvider {
-    static var previews: some View {
+public struct ActionOptionsAlert_Previews: PreviewProvider {
+    public static var previews: some View {
         ActionOptionsAlert(actionViewModel: nil, showingActionOptions: ToggleState())
     }
 }
