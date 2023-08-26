@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "TPSharedUI",
     platforms: [
-        .iOS(.v14), // Change this to .iOS(.v13) or higher
+        .iOS(.v15), // Change this to .iOS(.v13) or higher
     ], products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
